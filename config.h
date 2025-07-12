@@ -8,12 +8,14 @@ static const char *fonts[] = {
 	"Iosevka:size=12",
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+
 static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#a7aab0", "#101012" },
-	[SchemeSel] = { "#ffffff", "#2b5d63" },
-	[SchemeOut] = { "#51a8b3", "#101012" },
+	              /*  fg         bg       */
+	[SchemeNorm] = { "#d8dee9", "#2e3440" },
+	[SchemeSel] =  { "#eceff4", "#5e81ac" },
+	[SchemeOut] =  { "#eceff4", "#4c566a" },
 };
+
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
 static unsigned int lines      = 0;
 static unsigned int columns    = 0;
